@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaymentApplication.Pages.LoginPage"
+             Title="LoginPage">
+    <StackLayout>
+
+
+        <StackLayout BackgroundColor="#032D6E" HeightRequest="200">
+            <Image Source="login.svg" HeightRequest="200" HorizontalOptions="FillAndExpand"
+                   Margin="0,0,0,0"></Image>
+
+        </StackLayout>
+
+        <StackLayout Padding="20">
+            <StackLayout BackgroundColor="White" Margin="10" Padding="10" Spacing="50">
+                <Label Text="EMAIL" FontSize="Small" VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="FillAndExpand"
+                   TextColor="#032D6E"
+                   Margin="0,20,0,0"></Label>
+
+                <Frame Padding="10" CornerRadius="0">
+                    <Entry  Placeholder="username@gmail.com" PlaceholderColor="#032D6E"
+                            FontAttributes="Bold" ClearButtonVisibility="WhileEditing"
+                            Keyboard="Email"></Entry>
+                </Frame>
+
+                <Label Text="PASSWORD" FontSize="Small" VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="FillAndExpand"
+                   TextColor="#032D6E"
+                   Margin="0,20,0,0"></Label>
+
+                <Frame Padding="10" CornerRadius="0">
+                    <Entry  Placeholder="************" PlaceholderColor="#032D6E"
+                            FontAttributes="Bold"
+                            Keyboard="Numeric"
+                           ClearButtonVisibility="WhileEditing" ></Entry>
+                </Frame>
+                <Label Text="Forgot Password?"
+                   TextColor="#032D6E"
+                   Margin="0,15,0,0"
+                 HorizontalOptions="CenterAndExpand"></Label>
+
+                <Button BackgroundColor="#032D6E" Margin="0,20,0,0" Padding="0"
+                   CornerRadius="0"
+                Text="Log In" TextColor="White" HorizontalOptions="CenterAndExpand"
+                    Clicked="Button_Clicked"
+                       FontAttributes="Bold"
+                    HeightRequest="50"
+                    WidthRequest="300">
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+
+</ContentPage>

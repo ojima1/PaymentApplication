@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaymentApplication.Pages.RegistrationPage"
+             Title="RegistrationPage">
+    <StackLayout>
+
+        <StackLayout BackgroundColor="#032D6E" HeightRequest="150"  Orientation="Vertical">
+
+            <Label Text="USER" FontAttributes="Bold" TextColor="White"
+                   HorizontalOptions="CenterAndExpand"
+                  VerticalOptions="CenterAndExpand"
+                   Margin="0,0,0,0"></Label>
+
+            <Label Text="REGISTRATION" FontAttributes="Bold" TextColor="White" 
+                   HorizontalOptions="CenterAndExpand"
+                   ></Label>
+
+            <Image Source="register.png" HeightRequest="100"
+         HorizontalOptions="StartAndExpand"></Image>
+        </StackLayout>
+
+
+        <StackLayout BackgroundColor="White" Padding="10" Margin="0,0,0,0">
+            <Label Text="Register Here" TextColor="#032D6E"
+                   Margin="0,0,0,0"
+                   Padding="0,0,0,0"
+                   FontAttributes="Bold"
+                   FontSize="20"></Label>
+
+            <StackLayout Padding="20" Margin="20">
+                <Label Text="User Name" VerticalOptions="CenterAndExpand"
+                   Margin="0,20,0,0" TextColor="#032D6E"
+                   FontSize="15"></Label>
+
+                <Frame CornerRadius="0" Padding="5">
+                    <Entry Keyboard="Text" Placeholder="ex.Funsho and Sons inc." 
+                       PlaceholderColor="Gray"
+                      ClearButtonVisibility="WhileEditing" 
+                       ></Entry>
+                </Frame>
+                <Label Text="Email Address" VerticalOptions="CenterAndExpand" Margin="0,20,0,0"
+                   TextColor="#032D6E"
+                   FontSize="15"></Label>
+
+                <Frame Padding="5" CornerRadius="0">
+                    <Entry Keyboard="Email" Placeholder="ex.Funsho@gmail.com"
+                       ClearButtonVisibility="WhileEditing" PlaceholderColor="Gray">
+
+                    </Entry>
+                </Frame>
+
+                <Label Text="Phone No." VerticalOptions="CenterAndExpand" Margin="0,20,0,0"
+                   TextColor="#032D6E"
+                   FontSize="15"></Label>
+
+                <Frame Padding="5" CornerRadius="0">
+                    <Entry Keyboard="Email"  Placeholder="ex. Your Phone Number Here"
+                       ClearButtonVisibility="WhileEditing" PlaceholderColor="Gray">
+                    </Entry>
+                </Frame>
+
+                <Label Text="Address" VerticalOptions="CenterAndExpand" Margin="0,20,0,0"
+                   TextColor="#032D6E"
+                   FontSize="15">
+
+                </Label>
+
+                <Frame Padding="5" CornerRadius="0">
+                    <Entry  ClearButtonVisibility="WhileEditing"
+                       PlaceholderColor="Gray">
+
+                    </Entry>
+                </Frame>
+
+                <Button Text="Submit" TextColor="White" BackgroundColor="#032D6E"
+                    Clicked="Button_Clicked"
+                    Margin="0,20,0,0"
+                    CornerRadius="0"
+                    FontAttributes="Bold"
+                    FontSize="15">
+
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
