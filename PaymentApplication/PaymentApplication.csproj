@@ -51,10 +51,15 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\dashlocation2.svg" />
+	  <None Remove="Resources\Images\fundwallet.svg" />
+	  <None Remove="Resources\Images\listrrr.svg" />
 	  <None Remove="Resources\Images\login.svg" />
 	  <None Remove="Resources\Images\menu1.png" />
 	  <None Remove="Resources\Images\profile.png" />
 	  <None Remove="Resources\Images\register.png" />
+	  <None Remove="Resources\Images\rrr.svg" />
+	  <None Remove="Resources\Images\savedrrr.svg" />
+	  <None Remove="Resources\Images\walletvalue.svg" />
 	  <None Remove="Resources\Splash\splash2.png" />
 	</ItemGroup>
 

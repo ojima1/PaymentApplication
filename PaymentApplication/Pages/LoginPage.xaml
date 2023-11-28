@@ -14,7 +14,7 @@
 
         <StackLayout Padding="20">
             <StackLayout BackgroundColor="White" Margin="10" Padding="10" Spacing="50">
-                <Label Text="EMAIL" FontSize="Small" VerticalOptions="CenterAndExpand" 
+                <Label Text="EMAIL" x:Name="one" FontSize="Small" VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="FillAndExpand"
                    TextColor="#032D6E"
                    Margin="0,20,0,0"></Label>

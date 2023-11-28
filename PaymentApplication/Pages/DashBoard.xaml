@@ -9,14 +9,15 @@
 
             <Label Text="Welcome User!" HorizontalOptions="CenterAndExpand"
                    VerticalOptions="CenterAndExpand"
-                   Margin="0,5,0,0"
-                   Padding="-80,0,0,0"
+                   Margin="-20,5,0,0"
+                   Padding="10,0,0,0"
                    TextColor="#032D6E"
                    FontAttributes="Bold"></Label>
 
-            <Label Grid.Column="1" x:Name="one"
+            <Label  x:Name="two"
                    TextColor="#032D6E"
-                   FontAttributes="Bold"></Label>
+                   FontAttributes="Bold"
+                  ></Label>
 
             <Image Source="profile.png" HorizontalOptions="StartAndExpand"
                Margin="0,-40,0,0"
@@ -26,16 +27,19 @@
 
         <Label Text="DASHBOARD" FontAttributes="Bold" FontSize="Large" TextColor="#032D6E"
                Margin="20"
-               Padding="-20,0,0,0"></Label>
+               Padding="-20,0,0,0">
+            </Label>
 
 
-
+        <StackLayout Margin="10,0,0,0">
+        
         <Grid RowSpacing="10" Padding="30">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto">
                 </RowDefinition>
+               
 
-                <RowDefinition Height="Auto">
+                    <RowDefinition Height="Auto">
                 </RowDefinition>
 
                 <RowDefinition Height="Auto">
@@ -59,28 +63,170 @@
                 </ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <Frame Grid.Row="0" Grid.Column="0" HeightRequest="150"
-                   WidthRequest="150" BackgroundColor="LightBlue">
+            <Frame Grid.Row="0" Grid.Column="0" HeightRequest="100"
+                   WidthRequest="150" BackgroundColor="Green" CornerRadius="0" 
+                   Margin="0,0,0,0" BorderColor="Transparent" HasShadow="True">
 
-                <StackLayout>
-                    <Button Text="Fund Wallet" Padding="2" FontAttributes="Bold" Margin="-10,0,0,0"
+                    <StackLayout>
+                        <Button Text="Fund Wallet" Padding="1" FontAttributes="Bold" Margin="-30,0,0,0"
                         Clicked="Button_Clicked"
                         BackgroundColor="White"
                         CornerRadius="100"
-                        WidthRequest="100"
-                        TextColor="Black">
-                    </Button>
-                    <Image Source="dashlocation2.svg" HeightRequest="60" 
-                      Margin="0,0,0,-150" HorizontalOptions="StartAndExpand" 
+                        WidthRequest="80"
+                        TextColor="Black"
+                        FontSize="10">
+                        </Button>
+                       
+                        <Image Source="menu1.png" HeightRequest="60" 
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="StartAndExpand"
+                       Margin="100,-42,0,0"></Image>
+
+                      <Image Source="fundwallet.svg" HeightRequest="45" WidthRequest="200" 
+                      Margin="-70,-10,0,0" HorizontalOptions="StartAndExpand" 
                       VerticalOptions="StartAndExpand"></Image>
-                    <Image Source="menu1.png" HeightRequest="20" 
+
+                    </StackLayout>
+                </Frame>
+
+            <Frame Grid.Row="1" Grid.Column="0" HeightRequest="100"
+                   WidthRequest="150" BackgroundColor="Orange" Margin="355,-120,0,0"
+                   CornerRadius="0" BorderColor="Transparent" HasShadow="True">
+
+                <StackLayout>
+                        <Button Text="Wallet Value" Padding="1" FontAttributes="Bold" Margin="-30,0,0,0"
+                        Clicked="Button_Clicked"
+                        BackgroundColor="White"
+                        CornerRadius="100"
+                        WidthRequest="80"
+                        TextColor="Black"
+                        FontSize="10">
+                    </Button>
+
+                        <Image Source="menu1.png" HeightRequest="60" 
                        HorizontalOptions="EndAndExpand"
                        VerticalOptions="StartAndExpand"
-                       Margin="0,0,0,-100"></Image>
+                       Margin="100,-42,0,0"></Image>
+                    
+                        <Image Source="walletvalue.svg" HeightRequest="45"  WidthRequest="200"
+                      Margin="-80,-10,0,0" HorizontalOptions="StartAndExpand" 
+                      VerticalOptions="StartAndExpand"></Image>
+                    
+                   
                 </StackLayout>
             </Frame>
-        </Grid>
 
+            <Frame Grid.Row="2" Grid.Column="2" HeightRequest="100"
+                   WidthRequest="150" BackgroundColor="DarkBlue" Margin="-250,0,0,0"
+                   CornerRadius="0" BorderColor="Transparent" HasShadow="True">
+
+                <StackLayout>
+                    <Button Text="RRR" Padding="1" FontAttributes="Bold" Margin="-10,0,0,0"
+                        Clicked="Button_Clicked"
+                        BackgroundColor="White"
+                        CornerRadius="100"
+                        WidthRequest="80"
+                        TextColor="Black"
+                        FontSize="10">
+                    </Button>
+
+                        <Image Source="menu1.png" HeightRequest="60" 
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="StartAndExpand"
+                       Margin="100,-42,0,0"></Image>
+                    
+                      <Image Source="rrr.svg" HeightRequest="45"  WidthRequest="200"
+                      Margin="-80,-10,0,0" HorizontalOptions="StartAndExpand" 
+                      VerticalOptions="StartAndExpand"></Image>
+                    
+                    
+                </StackLayout>
+            </Frame>
+
+            <Frame Grid.Row="2" Grid.Column="1" HeightRequest="100"
+                   WidthRequest="150" BackgroundColor="DarkRed" Margin="230,-3 ,0,0"
+                   CornerRadius="0" BorderColor="Transparent" HasShadow="True">
+
+                <StackLayout>
+                    <Button Text="Payment" Padding="1" FontAttributes="Bold" Margin="-10,0,0,0"
+                        Clicked="Button_Clicked"
+                        BackgroundColor="White"
+                        CornerRadius="100"
+                        WidthRequest="80"
+                        TextColor="Black"
+                        FontSize="10">
+                    </Button>
+
+                        <Image Source="menu1.png" HeightRequest="60" 
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="StartAndExpand"
+                       Margin="100,-42,0,0"></Image>
+                    
+                      <Image Source="dashlocation2.svg" HeightRequest="45"  WidthRequest="200"
+                      Margin="-80,-10,0,0" HorizontalOptions="StartAndExpand" 
+                      VerticalOptions="StartAndExpand"></Image>
+                    
+                   
+                </StackLayout>
+            </Frame>
+
+            <Frame Grid.Row="3" Grid.Column="3" HeightRequest="100"
+                   WidthRequest="150" BackgroundColor="Yellow" Margin="-375,10,0,0"
+                   CornerRadius="0" BorderColor="Transparent" HasShadow="True">
+
+                <StackLayout>
+                    <Button Text="Saved RRR" Padding="1" FontAttributes="Bold" Margin="-10,0,0,0"
+                        Clicked="Button_Clicked"
+                        BackgroundColor="White"
+                        CornerRadius="100"
+                        WidthRequest="80"
+                        TextColor="Black"
+                        FontSize="10">
+                    </Button>
+
+                        <Image Source="menu1.png" HeightRequest="60" 
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="StartAndExpand"
+                       Margin="100,-42,0,0"></Image>
+                    
+                      <Image Source="savedrrr.svg" HeightRequest="45" WidthRequest="200" 
+                      Margin="-80,-10,0,0" HorizontalOptions="StartAndExpand" 
+                      VerticalOptions="StartAndExpand"></Image>
+                    
+                    
+                </StackLayout>
+            </Frame>
+
+            <Frame Grid.Row="3" Grid.Column="2" HeightRequest="100"
+                   WidthRequest="150" BackgroundColor="LightPink" Margin="105,10,0,0"
+                   CornerRadius="0" BorderColor="Transparent" HasShadow="True">
+
+                <StackLayout>
+                    <Button Text="List RRR" Padding="1" FontAttributes="Bold" Margin="-10,0,0,0"
+                        Clicked="Button_Clicked"
+                        BackgroundColor="White"
+                        CornerRadius="100"
+                        WidthRequest="80"
+                        TextColor="Black"
+                        FontSize="10">
+                    </Button>
+
+                        <Image Source="menu1.png" HeightRequest="60" 
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="StartAndExpand"
+                       Margin="100,-42,0,0"></Image>
+                    
+                      <Image Source="listrrr.svg" HeightRequest="45" WidthRequest="200"
+                      Margin="-80,-10,0,0" HorizontalOptions="StartAndExpand" 
+                      VerticalOptions="StartAndExpand"></Image>
+                    
+                    
+                </StackLayout>
+            </Frame>
+
+           
+        </Grid>
+        </StackLayout>
 
 
 
